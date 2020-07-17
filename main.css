@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+
+}
+html {
+  background-color: #FCFCFC;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+#content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#content h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#content .fail {
+  font-size: 2rem;
+  text-align: center;
+  color:red;
+  display:none;
+}
+
+.button-container{
+  display:grid;
+  grid-template-columns: auto auto;
+  width: 400px;
+}
+
+#start{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 0;
+  left: 200px;
+  border-radius: 10px;
+  background: border-box green;
+  cursor:pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+#reset{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 0;
+  left: 223px;
+  border-radius: 10px;
+  background: border-box red;
+  cursor:pointer;
+color: #fff;
+font-weight: bold;
+}
+
+.simon-container {
+  margin: 20px auto;
+  width:400px;
+  height:400px;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.round-container{
+  margin: 20px auto;
+  width:400px;
+  height:400px;
+  background-color:#fff;
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.simon-container .simon-button {
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.simon-button{
+  cursor:pointer;
+}
+
+.simon-button.green {
+  background-color: #21BA45;
+}
+
+.simon-button.red {
+  background-color: #DB2828;
+}
+
+.simon-button.yellow {
+  background-color: #FBBD08;
+}
+
+.simon-button.blue {
+  background-color: #2185D0;
+}
+
+.simon-button.green.light-up, .simon-button.green:active {
+  box-shadow: 10px 10px 5px rgb(131, 211, 150);
+}
+
+.simon-button.red.light-up,.simon-button.red:active {
+  box-shadow: 10px 10px 5px  rgb(219, 117, 117);
+}
+
+.simon-button.yellow.light-up,.simon-button.yellow:active {
+  box-shadow: 10px 10px 5px  rgb(253, 218, 113);
+}
+
+.simon-button.blue.light-up,.simon-button.blue:active {
+  box-shadow: 10px 10px 5px rgb(135, 180, 214);
+}
